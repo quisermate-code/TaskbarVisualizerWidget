@@ -1,0 +1,23 @@
+# Antigravity agent scaffolding (not part of the skin)
+.agents/
+scratch/
+skills-lock.json
+
+# Windows OS
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS (if ever cloned cross-platform)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor / IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Rainmeter generated cache / logs
+*.log
