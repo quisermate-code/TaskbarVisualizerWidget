@@ -34,61 +34,43 @@ Both sit inside the Windows 11 taskbar and react to whatever audio is playing on
 
 ## Requirements
 
-- **Windows 10 or 11** (Windows 11 recommended for best Acrylic blur)
-- [Rainmeter 4.5+](https://www.rainmeter.net/) — free, open-source
-- The following Rainmeter plugins (place `.dll` files in `%APPDATA%\Rainmeter\Plugins\`):
-  - [AudioLevel](https://docs.rainmeter.net/manual/plugins/audiolevel/) — built into Rainmeter
-  - [FrostedGlass](https://github.com/Hazedd/FrostedGlass/releases) — acrylic blur
-  - [WebNowPlaying](https://github.com/tjhrulz/WebNowPlaying-Rainmeter/releases) — browser media info
-  - [Win7AudioPlugin](https://forum.rainmeter.net/viewtopic.php?t=13997) — volume scrolling
+- **Windows 10 or 11** (Windows 11 recommended for Acrylic blur)
+- **[Rainmeter 4.5+](https://www.rainmeter.net/)** (free & open source)
 
 > [!NOTE]
-> AudioLevel ships with Rainmeter. You only need to manually install the other three.
+> Audio visualizer and volume control work out of the box. For Acrylic blur and browser song titles, the [FrostedGlass](https://github.com/Hazedd/FrostedGlass/releases) and [WebNowPlaying](https://github.com/tjhrulz/WebNowPlaying-Rainmeter/releases) plugins are supported.
 
 ---
 
 ## Installation
 
-### Step 1 — Download
+### 1-Click Install (.rmskin)
 
-Clone this repo or download the ZIP and extract it:
+1. Make sure you have **[Rainmeter](https://www.rainmeter.net/)** installed (free, lightweight).
+2. Download the latest **`TaskbarVisualizerWidget.rmskin`** from **[Releases](https://github.com/quisermate-code/TaskbarVisualizerWidget/releases)**.
+3. Double-click the downloaded `.rmskin` file and click **Install**.
 
-```
-git clone https://github.com/quisermate-code/TaskbarVisualizerWidget.git
-```
+That's it! The widget will install and load on your screen.
 
-### Step 2 — Add to Rainmeter Skins folder
+### Positioning on your Taskbar
 
-**Option A — Symlink (best for keeping the folder where it is):**
-
-Open PowerShell and run:
-```powershell
-New-Item -ItemType Junction -Path "$env:USERPROFILE\Documents\Rainmeter\Skins\TaskbarVisualizerWidget" -Target "PATH\TO\taskbar-visualizer-widget"
-```
-Replace `PATH\TO\taskbar-visualizer-widget` with wherever you cloned/extracted the folder.
-
-**Option B — Copy the folder:**
-
-Copy the entire folder into:
-```
-%USERPROFILE%\Documents\Rainmeter\Skins\TaskbarVisualizerWidget\
-```
-
-### Step 3 — Load the skin
-
-1. Open **Rainmeter** (right-click the tray icon → Manage)
-2. Click **Refresh All**
-3. Expand **TaskbarVisualizerWidget** in the skin list
-4. Click **Load** next to `FluentTaskbarWidget.ini` (or `CompactVisualizer.ini`)
-
-### Step 4 — Position it on the taskbar
-
-1. Right-click the skin → **Settings** → enable **Stay Topmost** and **Keep on screen**
-2. Drag the widget onto your taskbar
-3. Once happy with the position, right-click → **Settings** → disable **Draggable**
+1. Drag the widget onto your taskbar where you want it.
+2. Right-click the skin → **Settings** → check **Stay Topmost**.
+3. Once placed, right-click the skin → **Settings** → uncheck **Draggable** to lock it in place.
 
 > [!TIP]
-> The widget is sized to sit inside the standard 48 px Windows 11 taskbar. If your taskbar is a different size, right-click the skin and use the **Size** options to scale it up or down.
+> The widget is sized for the standard 48 px Windows 11 taskbar. You can right-click the widget and use the **Widget Size Controller** menu to scale it up or down anytime.
+
+<details>
+<summary><b>Manual / Developer Setup (from source)</b></summary>
+
+If you want to edit or clone the source directly:
+1. Clone into your Rainmeter skins folder:
+   ```powershell
+   git clone https://github.com/quisermate-code/TaskbarVisualizerWidget.git "$env:USERPROFILE\Documents\Rainmeter\Skins\TaskbarVisualizerWidget"
+   ```
+2. Open Rainmeter Manage dialog, click **Refresh all**, expand **TaskbarVisualizerWidget**, and click **Load**.
+</details>
 
 ---
 
