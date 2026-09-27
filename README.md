@@ -18,6 +18,8 @@ Two skins in one folder:
 |------|------|------|----------|
 | **Full Widget** | `FluentTaskbarWidget.ini` | ~310 px wide | Media info + visualizer |
 | **Compact Visualizer** | `CompactVisualizer.ini` | 210 px wide | Visualizer-only pill |
+| **Behind-the-Car 3D Clock** | `Clock\Clock.ini` | Draggable | 3D depth clock with vertical gradient |
+| **Car Cutout Layer** | `Cutout\Cutout.ini` | 1920×1080 | Standalone foreground depth layer |
 
 Both sit inside the Windows 11 taskbar and react to whatever audio is playing on your PC — music, YouTube, games, anything.
 
